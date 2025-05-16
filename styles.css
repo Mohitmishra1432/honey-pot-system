@@ -1,0 +1,52 @@
+:root {
+    --primary-dark: #0d1117;
+    --green-hacker: #00ff00;
+    --text-gray: #c9d1d9;
+    --alert-red: #ff4444;
+}
+
+body {
+    background: var(--primary-dark);
+    color: var(--text-gray);
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+}
+
+.logs-container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid var(--green-hacker);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px var(--green-hacker);
+}
+
+.logs-header {
+    color: var(--green-hacker);
+    text-transform: uppercase;
+    text-shadow: 0 0 5px var(--green-hacker);
+}
+
+.logs-table th {
+    background: rgba(0, 255, 0, 0.2);
+    color: var(--green-hacker);
+}
+
+.ip-address:hover {
+    color: var(--green-hacker);
+    cursor: pointer;
+}
+
+.alert {
+    color: var(--alert-red);
+    font-weight: bold;
+}
+
+.btn-outline-success:hover {
+    background: var(--green-hacker);
+    color: var(--primary-dark);
+}
+
+.btn-outline-danger:hover {
+    background: var(--alert-red);
+    color: var(--primary-dark);
+}
